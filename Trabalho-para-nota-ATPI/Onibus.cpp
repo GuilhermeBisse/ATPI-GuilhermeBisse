@@ -1,6 +1,4 @@
 #include <iostream>
-#include <iomanip>
-
 using namespace std;
 
 // Função para mostrar o layout do ônibus com as cadeiras que estarão na sombra
@@ -26,8 +24,8 @@ int main() {
     char onibus[5][4]; // 10 fileiras de 4 cadeiras cada
 
     // Inicializa todas as cadeiras como 'O' (livre)
-    for (int i = 0; i < 5; ++i) {
-        for (int j = 0; j < 4; ++j) {
+    for (int i = 0; i <= 5; ++i) {
+        for (int j = 0; j <= 4; ++j) {
             onibus[i][j] = 'O';
         }
     }
@@ -81,7 +79,7 @@ int main() {
     }
 
     float valorTotal = passagens * precoPassagem;
-    cout << "Valor total: R$" << fixed << setprecision(2) << valorTotal << endl;
+    cout << "Valor total: R$" << valorTotal << endl;
 
     return 0;
 }
