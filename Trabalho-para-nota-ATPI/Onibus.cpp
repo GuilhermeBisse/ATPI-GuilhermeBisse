@@ -21,7 +21,7 @@ void mostrarOnibus(char onibus[5][4], bool sombraEsquerda) {
 }
 
 int main() {
-    char onibus[5][4]; // 10 fileiras de 4 cadeiras cada
+    char onibus[5][4];
 
     // Inicializa todas as cadeiras como 'O' (livre)
     for (int i = 0; i <= 5; ++i) {
